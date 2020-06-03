@@ -42,7 +42,7 @@ EOF
 
 # Parse options
 BRANCH=$CI_BRANCH
-CDN="172.16.4.130:8001"
+CDN="releases.rancher.com/ui"
 
 if [[ -z "$BRANCH" ]]; then
   BRANCH=$(git symbolic-ref HEAD | sed -e "s/^refs\/heads\///")

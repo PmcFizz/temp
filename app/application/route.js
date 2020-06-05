@@ -186,7 +186,8 @@ export default Route.extend({
   },
 
   updateWindowTitle: observer('settings.appName', function() {
-    document.title = get(this, 'settings.appName');
+    // document.title = get(this, 'settings.appName');
+    document.title = 'OpenKube';
   }),
 
   finishLogin() {

@@ -185,8 +185,7 @@ export default Route.extend({
     },
   },
 
-  updateWindowTitle: observer('settings.appName', function() {
-    // document.title = get(this, 'settings.appName');
+  updateWindowTitle: observer('settings.appName', () => {
     document.title = 'OpenKube';
   }),
 

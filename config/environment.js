@@ -155,7 +155,7 @@ module.exports = function(environment) {
   }
   else if (environment === 'production')
   {
-    ENV.APP.apiServer = '';
+    ENV.APP.apiServer = 'https://10.57.4.2';
   }
 
   var pl = process.env.PL;

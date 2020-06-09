@@ -21,6 +21,7 @@ Router.map(function() {
   this.mount('login', { path: '/login' });
 
   this.route('ie');
+  this.route('test');
   this.route('index');
   this.route('failWhale', { path: '/fail' });
   this.route('not-found', { path: '*path' });

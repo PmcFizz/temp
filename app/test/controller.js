@@ -5,8 +5,8 @@ import { on } from '@ember/object/evented';
 
 export default Controller.extend({
   actions: {
-    toTest() {
-      this.transitionToRoute('test')
+    toLogin() {
+      this.transitionToRoute('login')
     }
   },
   bootstrap: on('init', function() {

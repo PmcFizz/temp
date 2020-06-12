@@ -123,5 +123,8 @@ limitations under the License.
 编译生产环境
 
 ```
-./scripts/build-static -l -s -c \"10.57.4.2:1443\"
+./scripts/build-static -l -s -c 'openkube.deepexi.cloud:1443'
+
 ```
+
+打包后将dist/static/latest2上传到/usr/local/www/latest2

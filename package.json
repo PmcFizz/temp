@@ -12,7 +12,7 @@
   "scripts": {
     "dependencies": "./scripts/update-dependencies",
     "start": "./node_modules/.bin/ember server",
-    "bsp": "./scripts/build-static -l -s -c \"10.57.4.2:1443\"",
+    "bsp": "./scripts/build-static -l -s -c 'openkube.deepexi.cloud:1443'",
     "lint:hbs": "ember-template-lint .",
     "dev": "./node_modules/.bin/ember server",
     "test": "./node_modules/.bin/ember test",

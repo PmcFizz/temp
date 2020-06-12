@@ -87,7 +87,7 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
       version: pkg.version,
-      appName: 'OpenKube',
+      appName: 'Rancher',
       environment: environment,
       baseAssets: '/',
 

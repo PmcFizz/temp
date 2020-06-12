@@ -2,7 +2,7 @@
   <h1>
     {{t
       "loginPage.greeting"
-      appName=settings.appName
+      appName=settings.openKubeName
       htmlSafe=true
     }}
     <div class="logo"></div>
@@ -14,7 +14,7 @@
       {{banner-message
         color="bg-error text-left"
         icon="icon-certificate"
-        message=(t "loginPage.insecure" appName=settings.appName htmlSafe=true)
+        message=(t "loginPage.insecure" appName=settings.openKubeName htmlSafe=true)
       }}
     {{else}}
       {{#unless app.initError}}

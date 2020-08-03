@@ -451,3 +451,92 @@ $project-nav-active: $dropdown-link-hover-bg !default;
     }
   }
 }
+
+
+// 左侧菜单栏的样式
+#application.left-menu .page-header{
+  background-color: $header;
+  flex: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  NAV {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    > ul {
+      background-color: $header;
+      border-radius: 0;
+      width: 200px;
+      height: auto;
+      margin-bottom: 0;
+      > li {
+        a {
+          padding-left: 20px;
+        }
+        .ember-basic-dropdown-trigger a .icon-chevron-down{
+          float: right;
+          margin-top: 5px;
+        }
+      }
+    }
+    &.nav-main {
+      margin-bottom: 0;
+    }
+    .try-dashboard {
+      width: 100%;
+      .btn {
+        color: #ffffff;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 0;
+        &:hover{
+          background-color: darken($header, 5%);
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    .ember-basic-dropdown-content{
+      font-size: 15px;
+      right: 0;
+      left: 200px;
+      background-color: #34495E;
+      color: white;
+      text-decoration: none;
+      width: 180px;
+      top: 0;
+      border: none;
+    }
+    .nav-cluster{
+      .ember-basic-dropdown-content{
+        width: 400px;
+      }
+    }
+    .nav-user{
+      display: none;
+    }
+  }
+
+
+  .nav-item {
+    position: relative;
+    display: block;
+  }
+  .nav-cluster {
+    float: none;
+    .chevron {
+      top: 16px;
+    }
+  }
+  .logo-oss {
+    margin-left: 8px;
+    margin-top: 10px;
+    background-image: url('images/logos/main_left.svg');
+  }
+}

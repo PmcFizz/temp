@@ -9323,7 +9323,7 @@ nav:
     apps: 应用列表
     noData: 目前没有运行应用程序
     noMatch: 没有应用程序匹配当前搜索
-    launch: 启动
+    launch: 部署
     manage: 管理
   infra:
     tab: 资源

@@ -124,7 +124,6 @@ limitations under the License.
 
 ```
 ./scripts/build-static -l -s -c 'openkube.deepexi.cloud:1443'
-
 ```
 
 打包后将dist/static/latest2上传到/usr/local/www/latest2

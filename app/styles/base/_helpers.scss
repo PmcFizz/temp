@@ -47,6 +47,29 @@
   width: 100%; /* 1 */
  }
 
+#application.left-menu.container {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+}
+
+#application.left-menu.container .login{
+  flex: 1;
+  height: 430px;
+}
+
+#application.left-menu.container main{
+  padding-left: 200px;
+  min-height: 100vh;
+  flex: auto;
+}
+
+#application.left-menu.container main .main-page-container{
+  padding: 20px;
+}
+
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;

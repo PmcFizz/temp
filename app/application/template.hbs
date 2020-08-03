@@ -1,7 +1,7 @@
 <div id="underlay" class="underlay hide"></div>
 <div id="loading-underlay" class="underlay"></div>
 <div id="loading-overlay" class="loading-overlay">
-  {{#if settings.isRancher}}
+  {{#if settings.isOpenKube}}
     <div class="square">
       <div class="lid">
       </div>
@@ -26,7 +26,7 @@
 />
 <div
   id="application"
-  class="container no-inline-space {{if settings.showHeaderBanner 'with-ui-header-banner' ''}} {{if settings.showFooterBanner 'with-ui-footer-banner' ''}}"
+  class="container no-inline-space left-menu {{if settings.showHeaderBanner 'with-ui-header-banner' ''}} {{if settings.showFooterBanner 'with-ui-footer-banner' ''}}"
 >
   {{outlet}}
 </div>

@@ -5,10 +5,16 @@
   }}
 {{/unless}}
 <main class="clearfix">
-  {{outlet}}
+  {{top-header
+    pageScope=pageScope
+    goToPrevious="goToPrevious"
+  }}
+  <div class="main-page-container">
+    {{outlet}}
+  </div>
 </main>
-{{#unless isPopup}}
+{{!-- {{#unless isPopup}}
   {{page-footer
     showAbout="showAbout"
   }}
-{{/unless}}
+{{/unless}} --}}

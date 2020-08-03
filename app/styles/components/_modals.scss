@@ -65,7 +65,7 @@ $modal-overlay                       : rgba($light-grey, 0.75) !default;
 
   &.large-modal {
     &.modal-container {
-      width: calc(100% - 40px);
+      width: calc(100% - 420px);
       max-width: 990px;
       margin: 0 auto;
     }
@@ -73,7 +73,7 @@ $modal-overlay                       : rgba($light-grey, 0.75) !default;
 
   &.medium-modal {
     &.modal-container {
-      width: calc(100% - 40px);
+      width: calc(100% - 420px);
       max-width: 750px;
       margin: 0 auto;
     }

@@ -18,13 +18,15 @@
     </div>
   </div>
 
-  <div class="pt-15 pb-15">
+  <div id="google-reCaptcha"></div>
+
+  {{!-- <div class="pb-15">
     <label class="acc-label">验证码</label>
     <div>
       {{input id="login-verifycode" name="verifycode" type="text" class="form-control login-verifycode-input"}}
       <img {{action "reloadcode"}} class="login-verifycode-img" src={{codeimg}} width="100"  />
     </div>
-  </div>
+  </div> --}}
 
   <p class="text-center">
     <button disabled={{waiting}} class="btn bg-primary" {{action "authenticate"}}>

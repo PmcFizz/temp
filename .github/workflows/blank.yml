@@ -39,3 +39,6 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
+
+    - name: Build Static
+      run: ./scripts/build-static -s

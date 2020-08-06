@@ -2,12 +2,12 @@
   <div class="header">
     {{#if firstLogin}}
 
-      <h1>{{t 'modalEditPassword.firstLogin.title' appName=settings.appName}}</h1>
-      <p class="help-text">{{t 'modalEditPassword.firstLogin.help' appName=settings.appName htmlSafe=true}}</p>
+      <h1>{{t 'modalEditPassword.firstLogin.title' appName=settings.openKubeName}}</h1>
+      <p class="help-text">{{t 'modalEditPassword.firstLogin.help' appName=settings.openKubeName htmlSafe=true}}</p>
     {{else}}
 
-      <h1>{{t 'modalEditPassword.edit.title' appName=settings.appName}}</h1>
-      <p class="help-text">{{t 'modalEditPassword.edit.help' appName=settings.appName htmlSafe=true}}</p>
+      <h1>{{t 'modalEditPassword.edit.title' appName=settings.openKubeName}}</h1>
+      <p class="help-text">{{t 'modalEditPassword.edit.help' appName=settings.openKubeName htmlSafe=true}}</p>
 
     {{/if}}
   </div>
@@ -25,7 +25,7 @@
         <label class="text-small">{{input type="checkbox" checked=model.optIn}} {{t 'telemetryOpt.label'}}</label> <a href="{{settings.docsBase}}/faq/telemetry" class="text-small" target="_blank" rel="noopener nofollow">{{t 'telemetryOpt.learnMore.label'}}</a>
       </div>
       <div>
-        <label class="text-small">{{input type="checkbox" checked=agreedToEula}} {{t 'telemetryOpt.eula.prefix' appName=settings.appName}} <a href="{{settings.eulaLink}}" target="_blank" rel="noopener nofollow">{{t 'telemetryOpt.eula.link' appName=settings.appName}}</a> {{t 'telemetryOpt.eula.suffix' appName=settings.appName}}</label>
+        <label class="text-small">{{input type="checkbox" checked=agreedToEula}} {{t 'telemetryOpt.eula.prefix' appName=settings.openKubeName}} <a href="{{settings.eulaLink}}" target="_blank" rel="noopener nofollow">{{t 'telemetryOpt.eula.link' appName=settings.openKubeName}}</a> {{t 'telemetryOpt.eula.suffix' appName=settings.openKubeName}}</label>
       </div>
     {{/if}}
   {{/input-edit-password}}

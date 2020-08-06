@@ -41,4 +41,4 @@ jobs:
       run: npm install
 
     - name: Build Static
-      run: ./scripts/build-static -s
+      run: npm run start

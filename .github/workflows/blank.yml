@@ -54,7 +54,7 @@ jobs:
       run: ./scripts/update-dependencies
 
     - name: Build Static
-      run: ./scripts/build-static -l -s
+      run: ./scripts/build-static -s
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.1.3

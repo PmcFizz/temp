@@ -49,7 +49,7 @@ jobs:
       run: ./scripts/build-static -s
 
     - name: Run a one-line script
-      run: cd /dist && ll
+      run: pwd && ll
 
     - name: Run a one-line script
       run: cd /dist/static && ll
